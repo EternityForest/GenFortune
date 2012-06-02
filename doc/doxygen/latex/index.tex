@@ -1,0 +1,13 @@
+\-It contails libraries for string manipulation,math,and \-J\-S\-O\-N file parsing.
+
+\-Using libfortune to parse \-J\-S\-O\-N is very simple. \-Just call \-J\-S\-O\-N\-\_\-\-Get\-\_\-\-Root\-\_\-object($\ast$file) on the string containing the \-J\-S\-O\-N you want to parse. \-It will return a pointer, which you can then pass to the other \-J\-S\-O\-N functions.
+
+\-None of the \-J\-S\-O\-N handling functions make a copy of the hierarchy in memory. \-All the magic happens in place on the file.
+
+\-Most of the \-J\-S\-O\-N functions will return a null pointer on failure.
+
+\-There may be files that are \-N\-O\-T valid json that can be paresed with libfortune. \-The focus of this library is size, portability, and ease of use, not error handling.
+
+\-The string libraries are also easy to use, and include many useful functions like copying,token replacement,adding two strings together, and automatically fixing capitolization.
+
+\-The random number generator is based on the \-Authors own \-X\-A\-B\-C-\/2, designed for maximum speed and even distribution of entropy across the bits of the returned value. \-The generator passes the most common tests of randomness and has a period of between 300 million and 2$^\wedge$32. 

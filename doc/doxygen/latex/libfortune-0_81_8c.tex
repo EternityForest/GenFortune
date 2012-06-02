@@ -1,0 +1,346 @@
+\hypertarget{libfortune-0_81_8c}{\section{src/libfortune-\/0.1.c \-File \-Reference}
+\label{libfortune-0_81_8c}\index{src/libfortune-\/0.\-1.\-c@{src/libfortune-\/0.\-1.\-c}}
+}
+{\ttfamily \#include \char`\"{}libfortune-\/0.\-1.\-h\char`\"{}}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{libfortune-0_81_8c_a34e8a513afcfa4403dffda13063965e1}{string\-\_\-replace} (unsigned char $\ast$str, unsigned int strlen, unsigned char $\ast$old, unsigned char oldlen, unsigned char $\ast$newstr, unsigned char newlen, unsigned char $\ast$output)
+\item 
+void \hyperlink{libfortune-0_81_8c_aa97238a3b3c89c08eacae8eef4791ba2}{string\-\_\-\-Capitalization\-Fixer} (char $\ast$str)
+\item 
+char \hyperlink{libfortune-0_81_8c_aad4c1f6d2aae5997bc9c56902a423169}{char\-\_\-\-Upper} (char chr)
+\item 
+unsigned char \hyperlink{libfortune-0_81_8c_a2e810294066643b8000791d99fd1fde5}{char\-\_\-is\-\_\-alphanumeric} (char chr)
+\item 
+unsigned char \hyperlink{libfortune-0_81_8c_ad06e792d0883bbdb216202dba5c93a49}{char\-\_\-is\-\_\-printable} (char chr)
+\item 
+void \hyperlink{libfortune-0_81_8c_af0154798b85d945348afb48a9a0a750a}{string\-\_\-replace\-\_\-null} (char $\ast$str, char $\ast$old, char $\ast$newstr, char $\ast$output)
+\item 
+void \hyperlink{libfortune-0_81_8c_ab62809f3ff93cae257d54b93016c7aef}{string\-\_\-append} (char $\ast$to, char $\ast$from)
+\item 
+void \hyperlink{libfortune-0_81_8c_af7779d4d40718fc33ce0d86ff73554e8}{string\-\_\-assign} (char $\ast$to, char $\ast$str)
+\item 
+char $\ast$ \hyperlink{libfortune-0_81_8c_a98b13204bb0f4c3dbaef87259767dfcf}{\-J\-S\-O\-N\-\_\-\-Get\-\_\-\-Root\-\_\-\-Object} (char $\ast$file)
+\item 
+char $\ast$ \hyperlink{libfortune-0_81_8c_ab377ac6d910580c12475a2c52c5a6fbd}{\-J\-S\-O\-N\-\_\-\-Get\-\_\-\-Object} (char $\ast$within, char $\ast$objectname)
+\item 
+unsigned char \hyperlink{libfortune-0_81_8c_ab80c73f7da157403f823fb5198308d9a}{is\-\_\-a\-\_\-number} (char chr)
+\item 
+unsigned int \hyperlink{libfortune-0_81_8c_aecbb4d24659ac06794bc2f9a642c038c}{\-J\-S\-O\-N\-\_\-\-Count} (char $\ast$within)
+\item 
+char $\ast$ \hyperlink{libfortune-0_81_8c_a782f3728bd38a0f6197006299e899269}{\-J\-S\-O\-N\-\_\-\-Array\-\_\-\-Access} (char $\ast$within, unsigned int index)
+\item 
+signed int \hyperlink{libfortune-0_81_8c_a9dda3cdeca6624eef215776a4825aa77}{\-J\-S\-O\-N\-\_\-\-Get\-\_\-\-Integer\-\_\-\-Simple} (char $\ast$obj)
+\item 
+unsigned char \hyperlink{libfortune-0_81_8c_ad89db89264f28e53242394f437c52d6c}{\-J\-S\-O\-N\-\_\-\-Type} (char $\ast$object)
+\item 
+void \hyperlink{libfortune-0_81_8c_a57aad7508634da6656769b019de5e07c}{\-J\-S\-O\-N\-\_\-\-Get\-\_\-\-String} (char $\ast$from, char $\ast$to)
+\item 
+\hypertarget{libfortune-0_81_8c_a2d51cec3c76e02eac445acaa1afa9b21}{char $\ast$ {\bfseries \-J\-S\-O\-N\-\_\-\-Random\-\_\-\-Pick} (char $\ast$from)}\label{libfortune-0_81_8c_a2d51cec3c76e02eac445acaa1afa9b21}
+
+\item 
+void \hyperlink{libfortune-0_81_8c_a0b4afb5af314702c76556b7d3ba0c84d}{init\-\_\-rng} (char s1, char s2, char s3)
+\item 
+unsigned char \hyperlink{libfortune-0_81_8c_a0ba09fe787749c67922dbb0b59758049}{randomize} ()
+\item 
+unsigned int \hyperlink{libfortune-0_81_8c_aa5e24e7fe12173f4dc6b99e36e5bda1a}{random\-\_\-up\-\_\-to} (unsigned int max)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{libfortune-0_81_8c_a2e810294066643b8000791d99fd1fde5}{\index{libfortune-\/0.\-1.\-c@{libfortune-\/0.\-1.\-c}!char\-\_\-is\-\_\-alphanumeric@{char\-\_\-is\-\_\-alphanumeric}}
+\index{char\-\_\-is\-\_\-alphanumeric@{char\-\_\-is\-\_\-alphanumeric}!libfortune-0.1.c@{libfortune-\/0.\-1.\-c}}
+\subsubsection[{char\-\_\-is\-\_\-alphanumeric}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char {\bf char\-\_\-is\-\_\-alphanumeric} (
+\begin{DoxyParamCaption}
+\item[{char}]{chr}
+\end{DoxyParamCaption}
+)}}\label{libfortune-0_81_8c_a2e810294066643b8000791d99fd1fde5}
+\-Returns weather or not the character is 0-\/9 a-\/z or \-A-\/\-Z 
+\begin{DoxyParams}{\-Parameters}
+{\em chr} & the character to be tested. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+weather or not the character is 0-\/9 a-\/z or \-A-\/\-Z 
+\end{DoxyReturn}
+\hypertarget{libfortune-0_81_8c_ad06e792d0883bbdb216202dba5c93a49}{\index{libfortune-\/0.\-1.\-c@{libfortune-\/0.\-1.\-c}!char\-\_\-is\-\_\-printable@{char\-\_\-is\-\_\-printable}}
+\index{char\-\_\-is\-\_\-printable@{char\-\_\-is\-\_\-printable}!libfortune-0.1.c@{libfortune-\/0.\-1.\-c}}
+\subsubsection[{char\-\_\-is\-\_\-printable}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char {\bf char\-\_\-is\-\_\-printable} (
+\begin{DoxyParamCaption}
+\item[{char}]{chr}
+\end{DoxyParamCaption}
+)}}\label{libfortune-0_81_8c_ad06e792d0883bbdb216202dba5c93a49}
+\-Returns true if char is printable 
+\begin{DoxyParams}{\-Parameters}
+{\em chr} & the ascii char to be tested \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+true if char is printable 
+\end{DoxyReturn}
+\hypertarget{libfortune-0_81_8c_aad4c1f6d2aae5997bc9c56902a423169}{\index{libfortune-\/0.\-1.\-c@{libfortune-\/0.\-1.\-c}!char\-\_\-\-Upper@{char\-\_\-\-Upper}}
+\index{char\-\_\-\-Upper@{char\-\_\-\-Upper}!libfortune-0.1.c@{libfortune-\/0.\-1.\-c}}
+\subsubsection[{char\-\_\-\-Upper}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf char\-\_\-\-Upper} (
+\begin{DoxyParamCaption}
+\item[{char}]{chr}
+\end{DoxyParamCaption}
+)}}\label{libfortune-0_81_8c_aad4c1f6d2aae5997bc9c56902a423169}
+\-Turns any lowercase ascii value into the equivalent uppercase and passes anything else unchanged. 
+\begin{DoxyParams}{\-Parameters}
+{\em chr} & the character to be capitalized \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-A capitalized version of chr 
+\end{DoxyReturn}
+\hypertarget{libfortune-0_81_8c_a0b4afb5af314702c76556b7d3ba0c84d}{\index{libfortune-\/0.\-1.\-c@{libfortune-\/0.\-1.\-c}!init\-\_\-rng@{init\-\_\-rng}}
+\index{init\-\_\-rng@{init\-\_\-rng}!libfortune-0.1.c@{libfortune-\/0.\-1.\-c}}
+\subsubsection[{init\-\_\-rng}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf init\-\_\-rng} (
+\begin{DoxyParamCaption}
+\item[{char}]{s1, }
+\item[{char}]{s2, }
+\item[{char}]{s3}
+\end{DoxyParamCaption}
+)}}\label{libfortune-0_81_8c_a0b4afb5af314702c76556b7d3ba0c84d}
+\-Put up to 3 bytes of new entropy by \-X\-O\-Ring into the state and cycle the genarator to avoid ill effects resulting from biases in seed data \hypertarget{libfortune-0_81_8c_ab80c73f7da157403f823fb5198308d9a}{\index{libfortune-\/0.\-1.\-c@{libfortune-\/0.\-1.\-c}!is\-\_\-a\-\_\-number@{is\-\_\-a\-\_\-number}}
+\index{is\-\_\-a\-\_\-number@{is\-\_\-a\-\_\-number}!libfortune-0.1.c@{libfortune-\/0.\-1.\-c}}
+\subsubsection[{is\-\_\-a\-\_\-number}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char {\bf is\-\_\-a\-\_\-number} (
+\begin{DoxyParamCaption}
+\item[{char}]{chr}
+\end{DoxyParamCaption}
+)}}\label{libfortune-0_81_8c_ab80c73f7da157403f823fb5198308d9a}
+\-Return true if the input is a numeric digit. 
+\begin{DoxyParams}{\-Parameters}
+{\em chr} & the character to be tested for numeric content. \\
+\hline
+\end{DoxyParams}
+\hypertarget{libfortune-0_81_8c_a782f3728bd38a0f6197006299e899269}{\index{libfortune-\/0.\-1.\-c@{libfortune-\/0.\-1.\-c}!\-J\-S\-O\-N\-\_\-\-Array\-\_\-\-Access@{\-J\-S\-O\-N\-\_\-\-Array\-\_\-\-Access}}
+\index{\-J\-S\-O\-N\-\_\-\-Array\-\_\-\-Access@{\-J\-S\-O\-N\-\_\-\-Array\-\_\-\-Access}!libfortune-0.1.c@{libfortune-\/0.\-1.\-c}}
+\subsubsection[{\-J\-S\-O\-N\-\_\-\-Array\-\_\-\-Access}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf \-J\-S\-O\-N\-\_\-\-Array\-\_\-\-Access} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{within, }
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+)}}\label{libfortune-0_81_8c_a782f3728bd38a0f6197006299e899269}
+\-Return a pointer to element \-N of \-J\-S\-O\-N array or object \-N. \-If used on an object the pointer returned will be to the key. \-Array index is assumed to be zero based. \-Should return null on out of bounds errors 
+\begin{DoxyParams}{\-Parameters}
+{\em $\ast$within} & \-A pointer to the beginning of a \-J\-S\-O\-N array or \-Object.(\-One past the starting delimiter) \\
+\hline
+{\em index} & \-An index into the \-J\-S\-O\-N array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+a pointer to element \-N of array(one past the delimiter) 
+\end{DoxyReturn}
+\hypertarget{libfortune-0_81_8c_aecbb4d24659ac06794bc2f9a642c038c}{\index{libfortune-\/0.\-1.\-c@{libfortune-\/0.\-1.\-c}!\-J\-S\-O\-N\-\_\-\-Count@{\-J\-S\-O\-N\-\_\-\-Count}}
+\index{\-J\-S\-O\-N\-\_\-\-Count@{\-J\-S\-O\-N\-\_\-\-Count}!libfortune-0.1.c@{libfortune-\/0.\-1.\-c}}
+\subsubsection[{\-J\-S\-O\-N\-\_\-\-Count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf \-J\-S\-O\-N\-\_\-\-Count} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{within}
+\end{DoxyParamCaption}
+)}}\label{libfortune-0_81_8c_aecbb4d24659ac06794bc2f9a642c038c}
+\-Count the size of a \-J\-S\-O\-N array or the number of members of an object. 
+\begin{DoxyParams}{\-Parameters}
+{\em $\ast$within} & \-A pointer to the start of an array(one past the delimiter) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-The number of members in $\ast$within or zero if an error occurred. 
+\end{DoxyReturn}
+\hypertarget{libfortune-0_81_8c_a9dda3cdeca6624eef215776a4825aa77}{\index{libfortune-\/0.\-1.\-c@{libfortune-\/0.\-1.\-c}!\-J\-S\-O\-N\-\_\-\-Get\-\_\-\-Integer\-\_\-\-Simple@{\-J\-S\-O\-N\-\_\-\-Get\-\_\-\-Integer\-\_\-\-Simple}}
+\index{\-J\-S\-O\-N\-\_\-\-Get\-\_\-\-Integer\-\_\-\-Simple@{\-J\-S\-O\-N\-\_\-\-Get\-\_\-\-Integer\-\_\-\-Simple}!libfortune-0.1.c@{libfortune-\/0.\-1.\-c}}
+\subsubsection[{\-J\-S\-O\-N\-\_\-\-Get\-\_\-\-Integer\-\_\-\-Simple}]{\setlength{\rightskip}{0pt plus 5cm}signed int {\bf \-J\-S\-O\-N\-\_\-\-Get\-\_\-\-Integer\-\_\-\-Simple} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{obj}
+\end{DoxyParamCaption}
+)}}\label{libfortune-0_81_8c_a9dda3cdeca6624eef215776a4825aa77}
+\-Take a \-J\-S\-O\-N pointer to a numeric value and return its value as an signed int. \-Anything after the decimal point is ignored, so it rounds down. \-Exponents are also ignored, thats why its called \char`\"{}\-Simple\char`\"{} \-Overflow will occur if the value is too big for an int. 
+\begin{DoxyParams}{\-Parameters}
+{\em $\ast$obj} & \-A pointer to the start of the number. \-This is either the first digit or the minus sign if one is present. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-The value of the numeric string. 
+\end{DoxyReturn}
+\hypertarget{libfortune-0_81_8c_ab377ac6d910580c12475a2c52c5a6fbd}{\index{libfortune-\/0.\-1.\-c@{libfortune-\/0.\-1.\-c}!\-J\-S\-O\-N\-\_\-\-Get\-\_\-\-Object@{\-J\-S\-O\-N\-\_\-\-Get\-\_\-\-Object}}
+\index{\-J\-S\-O\-N\-\_\-\-Get\-\_\-\-Object@{\-J\-S\-O\-N\-\_\-\-Get\-\_\-\-Object}!libfortune-0.1.c@{libfortune-\/0.\-1.\-c}}
+\subsubsection[{\-J\-S\-O\-N\-\_\-\-Get\-\_\-\-Object}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf \-J\-S\-O\-N\-\_\-\-Get\-\_\-\-Object} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{within, }
+\item[{char $\ast$}]{objectname}
+\end{DoxyParamCaption}
+)}}\label{libfortune-0_81_8c_ab377ac6d910580c12475a2c52c5a6fbd}
+\-Get a pointer to the start of a \-J\-S\-O\-N object,number,array,or string within a \-J\-S\-O\-N object. may be run recursively to provide simple read only \-J\-S\-O\-N input. 
+\begin{DoxyParams}{\-Parameters}
+{\em $\ast$within} & \-A pointer to the start of the \-J\-S\-O\-N object to be searched within \\
+\hline
+{\em $\ast$objectname} & a null-\/terminated string containing the name of the object we want a pointer to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Success\-:\-A pointer to the character after the starting delimeter of the object. \-Failure\-:\-The \-N\-U\-L\-L \-Pointer. 
+\end{DoxyReturn}
+\hypertarget{libfortune-0_81_8c_a98b13204bb0f4c3dbaef87259767dfcf}{\index{libfortune-\/0.\-1.\-c@{libfortune-\/0.\-1.\-c}!\-J\-S\-O\-N\-\_\-\-Get\-\_\-\-Root\-\_\-\-Object@{\-J\-S\-O\-N\-\_\-\-Get\-\_\-\-Root\-\_\-\-Object}}
+\index{\-J\-S\-O\-N\-\_\-\-Get\-\_\-\-Root\-\_\-\-Object@{\-J\-S\-O\-N\-\_\-\-Get\-\_\-\-Root\-\_\-\-Object}!libfortune-0.1.c@{libfortune-\/0.\-1.\-c}}
+\subsubsection[{\-J\-S\-O\-N\-\_\-\-Get\-\_\-\-Root\-\_\-\-Object}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf \-J\-S\-O\-N\-\_\-\-Get\-\_\-\-Root\-\_\-\-Object} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{file}
+\end{DoxyParamCaption}
+)}}\label{libfortune-0_81_8c_a98b13204bb0f4c3dbaef87259767dfcf}
+$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$ \-J\-S\-O\-N \-Parsing \-Functions\-Get the pointer to the highest-\/level object in a \-J\-S\-O\-N file string given a pointer to the start of that string 
+\begin{DoxyParams}{\-Parameters}
+{\em $\ast$file} & \-A pointer t the first character of a \-J\-S\-O\-N file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-A pointer to the root object that can be passed to the fuctions in this library that expect an object 
+\end{DoxyReturn}
+\hypertarget{libfortune-0_81_8c_a57aad7508634da6656769b019de5e07c}{\index{libfortune-\/0.\-1.\-c@{libfortune-\/0.\-1.\-c}!\-J\-S\-O\-N\-\_\-\-Get\-\_\-\-String@{\-J\-S\-O\-N\-\_\-\-Get\-\_\-\-String}}
+\index{\-J\-S\-O\-N\-\_\-\-Get\-\_\-\-String@{\-J\-S\-O\-N\-\_\-\-Get\-\_\-\-String}!libfortune-0.1.c@{libfortune-\/0.\-1.\-c}}
+\subsubsection[{\-J\-S\-O\-N\-\_\-\-Get\-\_\-\-String}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-J\-S\-O\-N\-\_\-\-Get\-\_\-\-String} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{from, }
+\item[{char $\ast$}]{to}
+\end{DoxyParamCaption}
+)}}\label{libfortune-0_81_8c_a57aad7508634da6656769b019de5e07c}
+\-Copy a string from a \-J\-S\-O\-N object into memory. \-Add a null terminator to the copy. \-If passed a null pointer in from, does nothing. 
+\begin{DoxyParams}{\-Parameters}
+{\em $\ast$from} & \-A pointer to one byte past the delimiter of the string \\
+\hline
+{\em $\ast$to} & \-A pointedr to the first byte of the area the string is to be copied to \\
+\hline
+\end{DoxyParams}
+\hypertarget{libfortune-0_81_8c_ad89db89264f28e53242394f437c52d6c}{\index{libfortune-\/0.\-1.\-c@{libfortune-\/0.\-1.\-c}!\-J\-S\-O\-N\-\_\-\-Type@{\-J\-S\-O\-N\-\_\-\-Type}}
+\index{\-J\-S\-O\-N\-\_\-\-Type@{\-J\-S\-O\-N\-\_\-\-Type}!libfortune-0.1.c@{libfortune-\/0.\-1.\-c}}
+\subsubsection[{\-J\-S\-O\-N\-\_\-\-Type}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char {\bf \-J\-S\-O\-N\-\_\-\-Type} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{object}
+\end{DoxyParamCaption}
+)}}\label{libfortune-0_81_8c_ad89db89264f28e53242394f437c52d6c}
+\-Get the type of an object pointed to by a \-J\-S\-O\-N object pointer. \-Recieving a valid response does not mean the object is truly valid, just that the beginning looks valid 
+\begin{DoxyParams}{\-Parameters}
+{\em $\ast$object} & \-A pointer to the byte after the delimeter of the object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-An unsigned char which may be referenced to \-J\-S\-O\-N\-\_\-\-O\-B\-J, \-J\-S\-O\-N\-\_\-\-N\-U\-M,\-J\-S\-O\-N\-\_\-\-A\-R\-R\-A\-Y, or \-J\-S\-O\-N\-\_\-\-S\-T\-R\-I\-N\-G 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{\-Bug}
+\item[\hyperlink{bug__bug000001}{\-Bug}]will return a string not obj of pointed at an object's key. \end{DoxyRefDesc}
+\hypertarget{libfortune-0_81_8c_aa5e24e7fe12173f4dc6b99e36e5bda1a}{\index{libfortune-\/0.\-1.\-c@{libfortune-\/0.\-1.\-c}!random\-\_\-up\-\_\-to@{random\-\_\-up\-\_\-to}}
+\index{random\-\_\-up\-\_\-to@{random\-\_\-up\-\_\-to}!libfortune-0.1.c@{libfortune-\/0.\-1.\-c}}
+\subsubsection[{random\-\_\-up\-\_\-to}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf random\-\_\-up\-\_\-to} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{max}
+\end{DoxyParamCaption}
+)}}\label{libfortune-0_81_8c_aa5e24e7fe12173f4dc6b99e36e5bda1a}
+\-Generate a random number between 0 and x inclusive. \-I am not a math professor, so be wary of my untested speed hack \-:) \-Basically we generate random numbers till one fits in the range. however, we also progressivly mask off more and more high order bits until the mask is $>$= twice the max number we want. \-The \-R\-N\-G was specifically designed not to have bias issues. \begin{DoxyReturn}{\-Returns}
+1 random number between 0 and x 
+\end{DoxyReturn}
+\hypertarget{libfortune-0_81_8c_a0ba09fe787749c67922dbb0b59758049}{\index{libfortune-\/0.\-1.\-c@{libfortune-\/0.\-1.\-c}!randomize@{randomize}}
+\index{randomize@{randomize}!libfortune-0.1.c@{libfortune-\/0.\-1.\-c}}
+\subsubsection[{randomize}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char {\bf randomize} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{libfortune-0_81_8c_a0ba09fe787749c67922dbb0b59758049}
+\-Generate a random byte using \-X\-A\-B\-C \begin{DoxyReturn}{\-Returns}
+1 unsigned char containing an evenly distributed random number 
+\end{DoxyReturn}
+\hypertarget{libfortune-0_81_8c_ab62809f3ff93cae257d54b93016c7aef}{\index{libfortune-\/0.\-1.\-c@{libfortune-\/0.\-1.\-c}!string\-\_\-append@{string\-\_\-append}}
+\index{string\-\_\-append@{string\-\_\-append}!libfortune-0.1.c@{libfortune-\/0.\-1.\-c}}
+\subsubsection[{string\-\_\-append}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf string\-\_\-append} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{to, }
+\item[{char $\ast$}]{from}
+\end{DoxyParamCaption}
+)}}\label{libfortune-0_81_8c_ab62809f3ff93cae257d54b93016c7aef}
+\-Append a cpy of $\ast$from to $\ast$to. 
+\begin{DoxyParams}{\-Parameters}
+{\em $\ast$to} & the base string \\
+\hline
+{\em $\ast$from} & the string to be appended \\
+\hline
+\end{DoxyParams}
+\hypertarget{libfortune-0_81_8c_af7779d4d40718fc33ce0d86ff73554e8}{\index{libfortune-\/0.\-1.\-c@{libfortune-\/0.\-1.\-c}!string\-\_\-assign@{string\-\_\-assign}}
+\index{string\-\_\-assign@{string\-\_\-assign}!libfortune-0.1.c@{libfortune-\/0.\-1.\-c}}
+\subsubsection[{string\-\_\-assign}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf string\-\_\-assign} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{to, }
+\item[{char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}}\label{libfortune-0_81_8c_af7779d4d40718fc33ce0d86ff73554e8}
+\-Assign a string literal to an array at runtime. 
+\begin{DoxyParams}{\-Parameters}
+{\em $\ast$to} & a string that is to contain str \\
+\hline
+{\em $\ast$str} & a string to be stored in to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{libfortune-0_81_8c_aa97238a3b3c89c08eacae8eef4791ba2}{\index{libfortune-\/0.\-1.\-c@{libfortune-\/0.\-1.\-c}!string\-\_\-\-Capitalization\-Fixer@{string\-\_\-\-Capitalization\-Fixer}}
+\index{string\-\_\-\-Capitalization\-Fixer@{string\-\_\-\-Capitalization\-Fixer}!libfortune-0.1.c@{libfortune-\/0.\-1.\-c}}
+\subsubsection[{string\-\_\-\-Capitalization\-Fixer}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf string\-\_\-\-Capitalization\-Fixer} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}}\label{libfortune-0_81_8c_aa97238a3b3c89c08eacae8eef4791ba2}
+\-Fix the capitalization of a string in place. \-Understands sentences, quotes, and singular pronoun '\-I' and contractions beginning with 'i'. \-Does not understand separator commas, relationships,etc. \-Will not \-De-\/\-Captalize anything. 
+\begin{DoxyParams}{\-Parameters}
+{\em $\ast$str} & \-The string to be capitalization-\/fixed in place \\
+\hline
+\end{DoxyParams}
+\hypertarget{libfortune-0_81_8c_a34e8a513afcfa4403dffda13063965e1}{\index{libfortune-\/0.\-1.\-c@{libfortune-\/0.\-1.\-c}!string\-\_\-replace@{string\-\_\-replace}}
+\index{string\-\_\-replace@{string\-\_\-replace}!libfortune-0.1.c@{libfortune-\/0.\-1.\-c}}
+\subsubsection[{string\-\_\-replace}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf string\-\_\-replace} (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{str, }
+\item[{unsigned int}]{strlen, }
+\item[{unsigned char $\ast$}]{old, }
+\item[{unsigned char}]{oldlen, }
+\item[{unsigned char $\ast$}]{newstr, }
+\item[{unsigned char}]{newlen, }
+\item[{unsigned char $\ast$}]{output}
+\end{DoxyParamCaption}
+)}}\label{libfortune-0_81_8c_a34e8a513afcfa4403dffda13063965e1}
+\-Replace all instances of old in str with newstr. \-Uses lengths instead of null-\/termination 
+\begin{DoxyParams}{\-Parameters}
+{\em $\ast$str} & \-A pointer to the start of str \\
+\hline
+{\em $\ast$old} & \-A pointer to the start of old \\
+\hline
+{\em $\ast$newstr} & \-A pointer to the start of newstr \\
+\hline
+{\em oldlen} & \-The length of old \\
+\hline
+{\em newlen} & \-The length of newstr \\
+\hline
+{\em strlen} & \-The length of str \\
+\hline
+{\em $\ast$output} & \-A pointer to the first byte of the output buffer \\
+\hline
+\end{DoxyParams}
+\hypertarget{libfortune-0_81_8c_af0154798b85d945348afb48a9a0a750a}{\index{libfortune-\/0.\-1.\-c@{libfortune-\/0.\-1.\-c}!string\-\_\-replace\-\_\-null@{string\-\_\-replace\-\_\-null}}
+\index{string\-\_\-replace\-\_\-null@{string\-\_\-replace\-\_\-null}!libfortune-0.1.c@{libfortune-\/0.\-1.\-c}}
+\subsubsection[{string\-\_\-replace\-\_\-null}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf string\-\_\-replace\-\_\-null} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str, }
+\item[{char $\ast$}]{old, }
+\item[{char $\ast$}]{newstr, }
+\item[{char $\ast$}]{output}
+\end{DoxyParamCaption}
+)}}\label{libfortune-0_81_8c_af0154798b85d945348afb48a9a0a750a}
+\-Replace all instances of old in str with newstr. \-Uses null-\/termination. \-You must not use this for in place replacement unless $\ast$old and $\ast$new are the same length. 
+\begin{DoxyParams}{\-Parameters}
+{\em $\ast$str} & \-A pointer to the start of str \\
+\hline
+{\em $\ast$old} & \-A pointer to the start of old \\
+\hline
+{\em $\ast$newstr} & \-A pointer to the start of newstr \\
+\hline
+{\em $\ast$output} & \-A pointer to the first byte of the output buffer \\
+\hline
+\end{DoxyParams}

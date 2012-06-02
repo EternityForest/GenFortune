@@ -1,0 +1,10 @@
+var searchData=
+[
+  ['json_5farray_5faccess',['JSON_Array_Access',['../libfortune-0_81_8c.html#a782f3728bd38a0f6197006299e899269',1,'JSON_Array_Access(char *within, unsigned int index):&#160;libfortune-0.1.c'],['../libfortune-0_81_8h.html#a782f3728bd38a0f6197006299e899269',1,'JSON_Array_Access(char *within, unsigned int index):&#160;libfortune-0.1.c']]],
+  ['json_5fcount',['JSON_Count',['../libfortune-0_81_8c.html#aecbb4d24659ac06794bc2f9a642c038c',1,'JSON_Count(char *within):&#160;libfortune-0.1.c'],['../libfortune-0_81_8h.html#aecbb4d24659ac06794bc2f9a642c038c',1,'JSON_Count(char *within):&#160;libfortune-0.1.c']]],
+  ['json_5fget_5finteger_5fsimple',['JSON_Get_Integer_Simple',['../libfortune-0_81_8c.html#a9dda3cdeca6624eef215776a4825aa77',1,'JSON_Get_Integer_Simple(char *obj):&#160;libfortune-0.1.c'],['../libfortune-0_81_8h.html#a9dda3cdeca6624eef215776a4825aa77',1,'JSON_Get_Integer_Simple(char *obj):&#160;libfortune-0.1.c']]],
+  ['json_5fget_5fobject',['JSON_Get_Object',['../libfortune-0_81_8c.html#ab377ac6d910580c12475a2c52c5a6fbd',1,'JSON_Get_Object(char *within, char *objectname):&#160;libfortune-0.1.c'],['../libfortune-0_81_8h.html#ab377ac6d910580c12475a2c52c5a6fbd',1,'JSON_Get_Object(char *within, char *objectname):&#160;libfortune-0.1.c']]],
+  ['json_5fget_5froot_5fobject',['JSON_Get_Root_Object',['../libfortune-0_81_8c.html#a98b13204bb0f4c3dbaef87259767dfcf',1,'JSON_Get_Root_Object(char *file):&#160;libfortune-0.1.c'],['../libfortune-0_81_8h.html#a98b13204bb0f4c3dbaef87259767dfcf',1,'JSON_Get_Root_Object(char *file):&#160;libfortune-0.1.c']]],
+  ['json_5fget_5fstring',['JSON_Get_String',['../libfortune-0_81_8c.html#a57aad7508634da6656769b019de5e07c',1,'JSON_Get_String(char *from, char *to):&#160;libfortune-0.1.c'],['../libfortune-0_81_8h.html#a57aad7508634da6656769b019de5e07c',1,'JSON_Get_String(char *from, char *to):&#160;libfortune-0.1.c']]],
+  ['json_5ftype',['JSON_Type',['../libfortune-0_81_8c.html#ad89db89264f28e53242394f437c52d6c',1,'JSON_Type(char *object):&#160;libfortune-0.1.c'],['../libfortune-0_81_8h.html#ad89db89264f28e53242394f437c52d6c',1,'JSON_Type(char *object):&#160;libfortune-0.1.c']]]
+];
