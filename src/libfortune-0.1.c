@@ -1,3 +1,4 @@
+
 /*this file is part of OpenFortune. OpenFortune is a replacement for the unix fortune utility with additional features
 to support dynamicly generating fortunes in a phrasal template type system from JSON files describing how to put together a fortune.
 OpenFortune is free software under the MIT licence. the docs and datafiles are Creative Commons atribution sharealike 3.0.*/

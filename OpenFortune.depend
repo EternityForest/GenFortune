@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1338622053 source:d:\programming\c\projects\openfortune\repo\src\libfortune-0.1.c
+	"libfortune-0.1.h"
+
+1332843385 d:\programming\c\projects\openfortune\repo\src\libfortune-0.1.h
+
+1338621863 source:d:\programming\c\projects\openfortune\repo\src\testsuite.c
+	<stdio.h>
+	<time.h>
+	"libfortune-0.1.h"
+	<signal.h>
+	<stdlib.h>
+
+1338622508 source:d:\programming\c\projects\openfortune\repo\src\main.c
+	<stdio.h>
+	<time.h>
+	"libfortune-0.1.h"
+	<signal.h>
+	<stdlib.h>
+	"build_cfg.h"
+	"default.h"
+
+1338622894 d:\programming\c\projects\openfortune\repo\src\build_cfg.h
+
+1338602390 d:\programming\c\projects\openfortune\repo\src\default.h
+

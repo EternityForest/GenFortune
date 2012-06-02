@@ -8,8 +8,11 @@ OpenFortune is free software under the MIT licence. the docs and datafiles are C
 #include <signal.h>
 #include <stdlib.h>
 
-#define DEFAULT_FANTASY
+//include build_cfg before default
+#include "build_cfg.h"
 #include "default.h"
+
+
 void generate_fortune();
 
 char outputbuffer[20000];
@@ -56,10 +59,21 @@ int main(int argc,char **argv)
 //User interface loop. press any key to generate a new fortune or uppercase Q to quit
     while(1)
     {
-        generate_fortune();
-        printf(outputbuffer2);
+#ifdef EMULATE_FORTUNE
         printf("\n");
+#endif
+        generate_fortune();
+
+        printf(outputbuffer2);
+ printf("\n");
+#ifdef EMULATE_FORTUNE
+        exit(0);
+#endif
+
+#ifndef EMULATE_FORTUNE
+
         if ('Q'==getchar()) exit(0);
+#endif
     }
 
 }
