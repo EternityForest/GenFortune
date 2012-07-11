@@ -11,7 +11,7 @@
 	<signal.h>
 	<stdlib.h>
 
-1338622508 source:d:\programming\c\projects\openfortune\repo\src\main.c
+1342029516 source:d:\programming\c\projects\openfortune\repo\src\main.c
 	<stdio.h>
 	<time.h>
 	"libfortune-0.1.h"
@@ -20,7 +20,7 @@
 	"build_cfg.h"
 	"default.h"
 
-1338622894 d:\programming\c\projects\openfortune\repo\src\build_cfg.h
+1338947932 d:\programming\c\projects\openfortune\repo\src\build_cfg.h
 
-1338602390 d:\programming\c\projects\openfortune\repo\src\default.h
+1342029754 d:\programming\c\projects\openfortune\repo\src\default.h
 

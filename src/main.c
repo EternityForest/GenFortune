@@ -36,17 +36,21 @@ int totalpatterns;
 
 int main(int argc,char **argv)
 {
+    //Set up the function SegFaultHandler as the handler for the SIGSEGV (segmentation violation) handler.
     signal(SIGSEGV,SegFaultHandler);
     //Seed the random number generator with all sorts of timing stuff cast to unsigned char
     init_rng((char)time(0),(char)clock(),(char)clock());
 
-    //if there is at least one argument
-    if(argc-1)
+    //if there is at least one argument, read the file.
+    //If there are no arguments, the variable json will contain the default and will not be changed.
+    if(1)//argc-1)
     {
-        JSON_File = fopen(*(argv+1),"r");
+       // JSON_File = fopen(*(argv+1),"r");
+        JSON_File = fopen("Pirate.json","r");
         //for some reason, fread would not work i remember
         while((temp=fgetc(JSON_File))!=EOF)
         {
+            //json is defined in default.h
             json[i]=temp;
             i++;
         }
@@ -55,17 +59,20 @@ int main(int argc,char **argv)
 
     }
 
+    //take the string variable and get its JSON root object pointer.
     root = JSON_Get_Root_Object(json);
-//User interface loop. press any key to generate a new fortune or uppercase Q to quit
+//User interface loop. press any key to generate a new fortune or uppercase Q to quit.
+//If the variable is defined, just print to the consolew and quit like the original fortune does.
     while(1)
     {
 #ifdef EMULATE_FORTUNE
         printf("\n");
 #endif
+//we always make a fortune and print a newline after it.
         generate_fortune();
 
         printf(outputbuffer2);
- printf("\n");
+        printf("\n");
 #ifdef EMULATE_FORTUNE
         exit(0);
 #endif
@@ -77,6 +84,9 @@ int main(int argc,char **argv)
     }
 
 }
+
+
+//Handle segmentations faults, a likely result of an incorrect fortune file.
 void SegFaultHandler()
 {
     printf("An error occured(Segmentation Fault). Please check that the fortune file is correct.");
@@ -84,6 +94,8 @@ void SegFaultHandler()
     exit(1);
 }
 
+//basically move the patter back and forth between two buffers, doing a string replace each time till
+//we have done a string replace for each keyword. repeat times the recursion parameter in the json file.
 void generate_fortune()
 {
     //get a starting pattern

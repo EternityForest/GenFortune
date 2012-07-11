@@ -75,7 +75,7 @@ main()
     printf("%d    ",randomize());
     printf("%d    ",randomize());
     printf("\n");
-    printf("thinking of numbers between one and ten\n");
+    printf("thinking of numbers between zero and ten\n");
     printf("%d    ",random_up_to(10));
     printf("%d    ",random_up_to(10));
     printf("%d    ",random_up_to(10));
