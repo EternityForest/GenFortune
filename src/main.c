@@ -43,10 +43,12 @@ int main(int argc,char **argv)
 
     //if there is at least one argument, read the file.
     //If there are no arguments, the variable json will contain the default and will not be changed.
-    if(1)//argc-1)
+    if(argc-1)
     {
-       // JSON_File = fopen(*(argv+1),"r");
-        JSON_File = fopen("Pirate.json","r");
+	printf("Loading file");
+        JSON_File = fopen(*(argv+1),"r");
+	printf("2");
+      //  JSON_File = fopen("Pirate.json","r");
         //for some reason, fread would not work i remember
         while((temp=fgetc(JSON_File))!=EOF)
         {
@@ -54,11 +56,10 @@ int main(int argc,char **argv)
             json[i]=temp;
             i++;
         }
+	printf("3");
         json[i]=0;
         fclose(JSON_File);
-
     }
-
     //take the string variable and get its JSON root object pointer.
     root = JSON_Get_Root_Object(json);
 //User interface loop. press any key to generate a new fortune or uppercase Q to quit.
@@ -70,7 +71,6 @@ int main(int argc,char **argv)
 #endif
 //we always make a fortune and print a newline after it.
         generate_fortune();
-
         printf(outputbuffer2);
         printf("\n");
 #ifdef EMULATE_FORTUNE
@@ -82,7 +82,6 @@ int main(int argc,char **argv)
         if ('Q'==getchar()) exit(0);
 #endif
     }
-
 }
 
 
@@ -102,22 +101,21 @@ void generate_fortune()
     here = JSON_Get_Object(root,"Patterns");
     here = JSON_Random_Pick(here);
     JSON_Get_String(here,outputbuffer);
-
     here = JSON_Get_Object(root,"Recursion");
     recursion = JSON_Get_Integer_Simple(here) + 1;
+    parts = JSON_Get_Object(root,"Parts");
+    macro = JSON_Get_Object(root,"Macro");
 
-    //iterate for recursion
-    for(i = 0; i <= (recursion); i++)
+    //iterate for recursionyy
+    for(i = 0; i < (recursion); i++)
     {
         //iterate over patterns
         totalpatterns = JSON_Count(JSON_Get_Object(root,"Parts"));
-        for(j = 0; j<= totalpatterns; j++)
+        for(j = 0; j< totalpatterns; j++)
         {
             //Seed the random number generator with all sorts of timing stuff cast to unsigned char
             init_rng((char)time(0),0,0);
-            parts = JSON_Get_Object(root,"Parts");
             here = JSON_Array_Access(parts,j);
-
             JSON_Get_String(here,thiskeyword);
             here = JSON_Get_Object(parts,thiskeyword);
 /////////////////
@@ -146,7 +144,6 @@ void generate_fortune()
         {
             //Seed the random number generator with all sorts of timing stuff cast to unsigned char
             init_rng((char)time(0),0,0);
-            macro = JSON_Get_Object(root,"Macro");
             here = JSON_Array_Access(macro,j);
 
             JSON_Get_String(here,thiskeyword);
@@ -166,13 +163,11 @@ void generate_fortune()
             }
         }
 
-
         if (lastused == 2)
         {
             string_assign(outputbuffer,outputbuffer2);
         }
     }
-
 
     //Add endings and beginnings
     here = JSON_Get_Object(root,"Introductions");

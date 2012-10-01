@@ -124,4 +124,16 @@ string_assign(temp2,"I fart ");
 string_append(temp2,"in your general direction!");
 printf(temp2);
 printf("\n");
+
+printf("checking array acess out of bounds detection. should say: Passed.\n");
+if(JSON_Array_Access(example_json_two_strings,2) == 0)
+{
+
+    printf("Passed");
+}
+else
+{
+    printf("Failed");
+}
+
 }
