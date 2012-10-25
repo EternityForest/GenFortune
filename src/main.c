@@ -26,7 +26,7 @@ char thiskeywordselection[255];
 int recursion;
 //what output buffer was last written to
 int lastused;
-
+//huuhhukhuk
 FILE *JSON_File;
 void SegFaultHandler();
 int i;
@@ -45,20 +45,17 @@ int main(int argc,char **argv)
     //If there are no arguments, the variable json will contain the default and will not be changed.
     if(argc-1)
     {
-	printf("Loading file");
         JSON_File = fopen(*(argv+1),"r");
-	printf("2");
-      //  JSON_File = fopen("Pirate.json","r");
+        //  JSON_File = fopen("Pirate.json","r");
         //for some reason, fread would not work i remember
         while((temp=fgetc(JSON_File))!=EOF)
         {
             //json is defined in default.h
             json[i]=temp;
             i++;
+            json[i]=0;
+            fclose(JSON_File);
         }
-	printf("3");
-        json[i]=0;
-        fclose(JSON_File);
     }
     //take the string variable and get its JSON root object pointer.
     root = JSON_Get_Root_Object(json);
@@ -71,7 +68,7 @@ int main(int argc,char **argv)
 #endif
 //we always make a fortune and print a newline after it.
         generate_fortune();
-        printf(outputbuffer2);
+        printf("%s",outputbuffer2);
         printf("\n");
 #ifdef EMULATE_FORTUNE
         exit(0);
@@ -102,10 +99,9 @@ void generate_fortune()
     here = JSON_Random_Pick(here);
     JSON_Get_String(here,outputbuffer);
     here = JSON_Get_Object(root,"Recursion");
-    recursion = JSON_Get_Integer_Simple(here) + 1;
+    recursion = JSON_Get_Integer_Simple(here);
     parts = JSON_Get_Object(root,"Parts");
     macro = JSON_Get_Object(root,"Macro");
-
     //iterate for recursionyy
     for(i = 0; i < (recursion); i++)
     {
@@ -140,7 +136,7 @@ void generate_fortune()
         }
         //iterate over macros
         totalpatterns = JSON_Count(JSON_Get_Object(root,"Macro"));
-        for(j = 0; j<= totalpatterns; j++)
+        for(j = 0; j< totalpatterns; j++)
         {
             //Seed the random number generator with all sorts of timing stuff cast to unsigned char
             init_rng((char)time(0),0,0);
@@ -180,3 +176,4 @@ void generate_fortune()
     //Seed the random number generator with all sorts of timing stuff cast to unsigned char
     init_rng((char)time(0),(char)clock(),(char)clock());
 }
+

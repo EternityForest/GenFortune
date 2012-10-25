@@ -1,6 +1,9 @@
 import sys
+import json
 File = open(sys.argv[1],'r')
 FileData = File.read()
+obj = json.loads(FileData)
+FileData = json.dumps(obj,separators=(',',':'))
 File.close()
 
 FileData =FileData.replace("\\","\\\\")

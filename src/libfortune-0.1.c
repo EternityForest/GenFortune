@@ -529,7 +529,7 @@ JSON_Get_Object (char *within, char *objectname)
 unsigned char
 is_a_number (char chr)
 {
-    return ((chr > 0x30)&(chr < 0x39));
+    return ((chr > 0x30)&&(chr < 0x39));
 }
 
 /**
@@ -720,27 +720,26 @@ JSON_Get_Integer_Simple (char *obj)
     signed int OrderOfMagnitude = 1;
     signed int Total = 0;
     //check if the number is negative
-    if (*obj == '-')
+    if (obj[0] == '-')
     {
         i++;
         OrderOfMagnitude = -1;
     }
 
-    while (1 & obj[i])
+    while (1)
     {
-        //seek to end of number then go back to start. just read the code :-)
+        //seek to least significant digit.
         if (is_a_number (obj[i]))
         {
             i++;
-            break;
         }
         else
         {
-            i--;
+            break;
         }
     }
     i--;
-    while (1 & obj[i])
+    while (1)
     {
         if (!is_a_number (obj[i]))
         {
@@ -749,7 +748,7 @@ JSON_Get_Integer_Simple (char *obj)
         //48 is to translate ASCII->Digit
         Total += (obj[i] - 48) * OrderOfMagnitude;
         OrderOfMagnitude *= 10;
-        i--;
+        if(i)i--; else break;
     }
     return (Total);
 }

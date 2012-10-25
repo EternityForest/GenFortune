@@ -1,0 +1,51 @@
+{
+    "Recursion" : 1,
+    "Introductions":
+        [
+""
+        ],
+    "Endings":
+        [
+        ""
+        ],
+    "Patterns":
+        [
+            "The -Color -Noun has -Verbed.",
+			"Clear to -Verb the -Noun.",
+			"Meet the -Postman at the -Place.",
+			"the -Noun is in the -Place.",
+			"the -Postman has the -Noun."
+			],
+    "Parts":
+        {
+            "-Noun":
+                [
+                    "lantern",
+					"book",
+					"meal",
+					"canteen",
+					"pencil",
+					"jerry can"
+                ],
+			"-Color":
+			[
+			"red","blue","green","purple","orange","yellow"
+			],
+			"-Place":
+			["house","trap","circus","farm","station","car","truck"],
+			"-Postman":
+			["cook","baker","chef","mailman","milkman","fireman","driver","farmer"],
+			"-Verb":
+			["cook","burn","wake up","flip"],
+			"-Verbed":
+			["spoke","moved"]
+        },
+    "Macro":
+        {
+            "":
+                [
+                    ""
+                ]
+        }
+
+}

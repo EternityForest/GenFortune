@@ -1,0 +1,7 @@
+#/usr/bin/bash
+
+gcc main.c libfortune-0.1.c
+chmod a=rx a.out
+cp a.out /usr/bin/openfortune
+cd /usr/bin/
+chmod a=rx openfortune

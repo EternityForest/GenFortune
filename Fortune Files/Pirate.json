@@ -1,7 +1,12 @@
 {
     "Recursion": 5,
     "Introductions": [
-        "An old nautical tale says: ","A word of pirate advice: ","Wise pirate says: ","A parrot says: ","You look at your treasure map. On the back, someone has written: ","That old man told me "
+        "An old nautical tale says: ",
+        "A word of pirate advice: ",
+        "Wise pirate says: ",
+        "A parrot says: ",
+        "You look at your treasure map. On the back, someone has written: ",
+        "That old man told me "
     ],
     "Endings": [
         ""
@@ -26,19 +31,19 @@
         "-SeaMan: they want to toss overboard our -Object!",
         "the -Object you found in -CreepyPlace looks very -BadAdjective!",
         "-CreepyPlace is full of -Demons.",
-		"the -Demon will try to give you its -Object. Do not let it!",
+        "the -Demon will try to give you its -Object. Do not let it!",
         "No -Demons Allowed on this ship. i will personally -Punish Any -SeaMan caught harboring one.",
         "the body of the -SeaMan has gone -Place. He was killed in -CreepyPlace by the -Entity's -Object.",
-		"that -Object is not as it looks. it came from -CreepyPlace.",
-		"the -SeaMan danced the hempen jig long ago!",
-		"Avast! it looks like we got ourselves a traitor, mister -SeaMan!",
-		"but are you not afraid of the -Demon?",
-		"I would stay outta that -CreepyPlace if i were you. Just go back -Place.",
-		"Who left this -Demon on MY ship??? See that it is properly disposed of or i'm going to -Punish someone."
-		"He sold is very soul just to become -SeaMan? what a -BadAdjective -InsultName of a -Demon!",
-		"sure, that -Demon is beautiful and will offer you its -Object, but just think of the smell!",
-		"Get this -Demon off my ship immediately!"		
-		],
+        "that -Object is not as it looks. it came from -CreepyPlace.",
+        "the -SeaMan danced the hempen jig long ago!",
+        "Avast! it looks like we got ourselves a traitor, mister -SeaMan!",
+        "but are you not afraid of the -Demon?",
+        "I would stay outta that -CreepyPlace if i were you. Just go back -Place.",
+        "Who left this -Demon on MY ship??? See that it is properly disposed of or i'm going to -Punish someone.",
+        "He sold is very soul just to become -SeaMan? what a -BadAdjective -InsultName of a -Demon!",
+        "sure, that -Demon is beautiful and will offer you its -Object, but just think of the smell!",
+        "Get this -Demon off my ship immediately!"
+    ],
     "Parts": {
         "-PreWrittenQuote": [
             "Another glass of rum for my wench?",
@@ -55,9 +60,7 @@
             "Bring yer guns. Its gonna be a battle",
             "Fifty pieces of eight for that? I ought to hae ye head!",
             "Bo'sun: Still the guns and stow 'em, Signal the men, set the flags and make good to clear port.",
-			"At sunrise we all dance the hempen jig, so raise up your pint of rum and take another swig!"
-			
-           
+            "At sunrise we all dance the hempen jig, so raise up your pint of rum and take another swig!"
         ],
         "-Demon": [
             "life-stealer",
@@ -116,8 +119,8 @@
             "hat",
             "scabbard",
             "axe",
-			"grog barrel",
-			"hogshead",
+            "grog barrel",
+            "hogshead"
         ],
         "-PartOfSelf": [
             "arm",
@@ -198,12 +201,12 @@
             "with my son",
             "with your son",
             "with my sweetheart",
-			"on the coast of england",
-			"under the gallows tree",
-			"on the coast of france",
-			"in the hole",
-			"in the galley",
-			"in the head"
+            "on the coast of england",
+            "under the gallows tree",
+            "on the coast of france",
+            "in the hole",
+            "in the galley",
+            "in the head"
         ],
         "-InsultName": [
             "landlubber",
@@ -223,13 +226,16 @@
             "kill",
             "execute",
             "pickle in brine",
-			"get a rope and keelhaul",
-			"get my gun and shoot",
-			"get a knife and stab",
-			"stab",
-			"go to an island and maroon"
+            "get a rope and keelhaul",
+            "get my gun and shoot",
+            "get a knife and stab",
+            "stab",
+            "go to an island and maroon"
         ],
-		"-Entity":["-SeaMan","-Demon"],
+        "-Entity": [
+            "-SeaMan",
+            "-Demon"
+        ],
         "-DoingPirateActivity": [
             "sailing these waters",
             "searching for this treasure",
@@ -240,18 +246,17 @@
             "venturing near this part of the ocean",
             "eating as poorly as we do",
             "drinking this stuff",
-			"swabbing this deck",
-			"drinking grog",
-			"searching for that damn thing",
-			"reading this book"
+            "swabbing this deck",
+            "drinking grog",
+            "searching for that damn thing",
+            "reading this book"
         ]
     },
     "Macro": {
-        
         "-2BadAdjective": [
             "-BadAdjective"
         ],
-		"-3BadAdjective": [
+        "-3BadAdjective": [
             "-2BadAdjective"
         ]
     }
