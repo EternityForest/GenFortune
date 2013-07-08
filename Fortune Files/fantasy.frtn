@@ -35,14 +35,14 @@
 		"when you understand what it means to be -Feeling, then you will be worthy of -Object.",
 		"-Person told me to meet you here. Did you bring -Object?",
 		"I have forseen that you and -Person shall bear -Object to -Place. This must be done -SameTimeQualifier -EpicEvent.",
-		"I will hide the -Object -PlaceRelator -2Object.",
+		"I will hide the -Object -RelatorPlace -2Object.",
 		"you will know it is me by the sign of -Object.",
 		"he shows up in the most unlikely places. I once saw him -Place!",
 		"I need you to bring -Object. and -2Object. and be at -Place before -PresentTenseEventduplicate.",
 		"whatever you do, do not let -Person -BadFate.",
 		"You will know when you need to use this. Its -Object.",
 		"Hurry up! we must get to -Place before -EpicEvent!",
-		"-Person taught you well. i can see it in the way you used -Object when we were -Place.",
+		"-Person taught you well. i can see it in the way you used -Object when we were at -Place.",
 		"-Person and -2Person went to -Place. they should be back before -PresentTenseEventduplicate.",
 		"the -Adjective ones gather at -Place. They are here to disuss -Object.",
 		"you feel -Adjective. What could be happening?",
@@ -52,8 +52,8 @@
     ],
     "Parts": {
         "-PartOfAVision": [
-            "-Object is -PlaceRelator -2Object.",
-            "-Person is -PlaceRelator -2Object.",
+            "-Object is -RelatorPlace -2Object.",
+            "-Person is -RelatorPlace -2Object.",
             "-Place is -Adjective",
             "-ThirdPersonCommand get out before -PresentTenseEventduplicate",
             "You feel -Feeling",
@@ -109,7 +109,7 @@
             "joyous",
             "uplifted by the spirits"
         ],
-        "-PlaceRelator": [
+        "-RelatorPlace": [
             "on top of",
             "inside",
             "near",
@@ -392,7 +392,7 @@
             "go to",
             "arrive at",
             "set out to",
-            "go however I can",
+            "go however I can to",
             "do what I can to get to"
         ],
         "-ThirdPersonCommand": [
