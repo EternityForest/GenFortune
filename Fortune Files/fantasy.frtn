@@ -48,7 +48,8 @@
 		"you feel -Adjective. What could be happening?",
 		"You feel called to -Place. You cannot explain it. you feel -Adjective.",
 		"\"you know that this -Object is -Adjective, right?\", says -Person.",
-		"-Person: \"you must not overlook the -Object in -Place. Otherwise we all might -BadFate.\""
+		"-Person: \"you must not overlook the -Object in -Place. Otherwise we all might -BadFate.\"",
+        "-Person at -Place -RelatorPresentPerfectTense -2Person."
     ],
     "Parts": {
         "-PartOfAVision": [
