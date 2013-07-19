@@ -33,9 +33,13 @@ def fixCap(string):
     return output.replace(" i "," I ")
 
 
-if len(sys.argv) ==1 :
-    f = open(choice(availiblefortunefiles))
-
+if len(sys.argv) ==1 or( (len(sys.argv)==2 )and '-v' in sys.argv):
+    n = choice(availiblefortunefiles)
+    f = open(n)
+    
+    if '-v' in sys.argv:
+        print ("Fortune generated from "+n+":")
+    
 if len(sys.argv) > 1:
     if sys.argv[1] == '-f':
         f = open(sys.argv[2],'r')
@@ -53,6 +57,10 @@ if len(sys.argv) > 1:
 >>>openfortune
     Print a fortune using a randomly chosen .frtn file from /usr/share/openfortune
 
+>>>openfortune -v
+    Print a fortune using a randomly chosen .frtn file from /usr/share/openfortune
+    And also display what file it came from.
+
 >>>openfortune -f <file>
     Print a fortune using the fortune file specified
 
@@ -61,6 +69,8 @@ if len(sys.argv) > 1:
 
 >>>openfortue list 
     List availible fortune files in /usr/share/openfortune (With file extensions removed)
+    
+    A
 """)
         quit()
     elif sys.argv[1] == 'list':
