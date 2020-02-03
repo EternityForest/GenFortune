@@ -44,11 +44,18 @@
                     "Gallows",
                     "King's",
                     "Knight's",
-                    "Queen's ",
+                    "Queen's",
                     "Cinder",
                     "Dreamer",
                     "Battle",
-                    "Torch"
+                    "Torch",
+                    "Bull",
+                    "Star",
+                    "Wind",
+                    "Sun",
+                    "Bear",
+                    "Sand",
+                    "Sky"
                 ],
                 "-part2":
                 [
@@ -73,7 +80,11 @@
                     "Town",
                     "Canyon",
                     "Cabin",
-                    "Point"
+                    "Point",
+                    "Run",
+                    "Mountain",
+                    "Bridge"
+                
                 ]
         },
     "Macro":

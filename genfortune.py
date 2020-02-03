@@ -28,7 +28,7 @@ if os.path.isdir(os.path.join(d,"Fortune Files")):
 elif os.path.isdir("/usr/share/genfortune"):
    load("/usr/share/genfortune")
 
-seed()
+seed(os.urandom(24))
 
 def fixCap(string):
     output = ""
@@ -102,7 +102,9 @@ Data = json.loads(dat)
 Pattern = choice(Data['Patterns'])
 
 #Repeat the substitution as many times as Recursion says to.
-for i in range(Data['Recursion'] + 1):
+#Or until we break.  So we add a few extra because htis wi
+for i in range(Data.get('Recursion',32) + 1):
+    b = True
     #Iterate over all the keywords
     for j in Data['Parts'].keys():
         if j in Pattern:
@@ -113,12 +115,18 @@ for i in range(Data['Recursion'] + 1):
             #Unless the naming convention specifies that you can use the same selection twice removeit.
             if j.count("duplicate") == 0 :
                 Data['Parts'][j].remove(x)
+            b=False
 
     for j in Data['Macro'].keys():
+        if j in Pattern:
             #Replace each keyword with a random selection from Macro['keyword']
             Temp = choice(Data['Macro'][j]) 
             Pattern = Pattern.replace(j, choice(Data['Macro'][j]))
             #Unless the naming convention specifies that you can use the same selection twice remove it.
+            b = False
+
+    if b:
+        break
         
 #Add intro and outtro and print the output
 Pattern = choice(Data['Introductions']) + Pattern
