@@ -36,11 +36,11 @@ def fixCap(string):
     for i in string:
         if inasentence:
             output+=(i)
-            if i== '.':
+            if i in '.?!':
                 inasentence = False
         else:
             output+=(i.upper())
-            if not i ==" ":
+            if not i in " ?!":
                 inasentence = True
                 
     return output.replace(" i "," I ")
