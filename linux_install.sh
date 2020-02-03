@@ -1,7 +1,9 @@
 #!/bin/sh
-rm /usr/bin/openfortune
-cp Fortune\ Files/*.frtn /usr/share/openfortune
-cp Python\ Version/OpenFortune.py /usr/bin/openfortune
-chmod -R 555 /usr/share/openfortune
-chmod 555 /usr/bin/openfortune
+rm /usr/bin/genfortune
+mkdir -p /usr/share/genfortune
+cp Fortune\ Files/*.frtn /usr/share/genfortune
+cp genfortune.py /usr/bin/genfortune
+chmod -R 755 /usr/share/genfortune
+chmod 755 /usr/bin/genfortune
+chown root /usr/bin/genfortune
 echo "Install Complete"

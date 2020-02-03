@@ -1,19 +1,32 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import sys
 
 from random import choice
 from random import seed
-import os,dircache
+import os
 
 availiblefortunefiles = []
 availiblefortunefileslistforprinting = []
-if os.path.isdir("/usr/share/openfortune"):
-    for i in dircache.listdir("/usr/share/openfortune"):
-        x = os.path.join("/usr/share/openfortune",i)
-        if os.path.isfile(x) and i.endswith(".frtn"):
+d = os.path.abspath(__file__)
+
+d= os.path.dirname(d)
+
+
+def load(d):
+    global FortunesDir
+    FortunesDir = d
+    for i in os.listdir(d):
+        x = os.path.join(d,i)
+        if os.path.isfile(x) and (i.endswith(".frtn") or i.endswith(".json")):
             availiblefortunefiles.append(x)
             availiblefortunefileslistforprinting.append(i[:-5])
+
+if os.path.isdir(os.path.join(d,"Fortune Files")):
+    load(os.path.join(d,"Fortune Files"))
+
+elif os.path.isdir("/usr/share/genfortune"):
+   load("/usr/share/genfortune")
 
 seed()
 
@@ -46,8 +59,8 @@ if len(sys.argv) > 1:
 
 
     elif sys.argv[1] == 'from':
-        if os.path.isfile(os.path.join("/usr/share/openfortune",sys.argv[2]+".frtn")):
-            f = open(os.path.join("/usr/share/openfortune",sys.argv[2]+".frtn"))
+        if os.path.isfile(os.path.join(FortunesDir,sys.argv[2]+".frtn")):
+            f = open(os.path.join(FortunesDir,sys.argv[2]+".frtn"))
         else:
             print("No fortune file at " +os.path.join("/usr/share/openfortune",sys.argv[2]+".frtn"))
             quit()

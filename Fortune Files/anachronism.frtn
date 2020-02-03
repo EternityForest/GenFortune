@@ -45,11 +45,11 @@
 				],
 			"-Verbed":
 				[
-					"thrown","eaten","defined","licked","made untoward advances at","insulted","stared at","fought with","spat upon"
+					"thrown","eaten","defiled","licked","made untoward advances at","insulted","stared at","fought with","spat upon"
 				],
 			"-FullPlace":
 				[
-					"in the Barrel","under my bed","on top of me","where the king can see it","where the queen can see it","near me","around me","in my mind","In the King's court","On any ship of the royal navy","where the dogs can hear it","anywhere near any man of property","around the tannery","on the other side of the Thames","anywhere remotely near anyone who owns anything like that -Noun"
+					"in the Barrel","under my bed","on top of me","where the king can see it","where the Queen can see it","near me","around me","in my mind","In the King's court","On any ship of the Royal Navy","where the dogs can hear it","anywhere near any man of property","around the tannery","on the other side of the Thames","anywhere remotely near anyone who owns anything like that -Noun"
 				]
 		},
 	"Macro":

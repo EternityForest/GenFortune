@@ -1,3 +1,3 @@
 #!/bin/sh
-rm /usr/bin/openfortune
-rm -r /usr/share/openfortune
+rm /usr/bin/genfortune
+rm -r /usr/share/genfortune
