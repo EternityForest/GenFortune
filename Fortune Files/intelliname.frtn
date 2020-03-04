@@ -54,8 +54,10 @@
                     "Wind",
                     "Sun",
                     "Bear",
-                    "Sand",
-                    "Sky"
+                    "Sandy",
+                    "Sky",
+                    "Deer",
+                    "Frog"
                 ],
                 "-part2":
                 [
@@ -83,8 +85,9 @@
                     "Point",
                     "Run",
                     "Mountain",
-                    "Bridge"
-                
+                    "Bridge",
+                    "Creek",
+                    "Beach"
                 ]
         },
     "Macro":
