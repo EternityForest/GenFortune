@@ -19,7 +19,7 @@
 			"You mean to charge -Money for that -Noun? I should rather take my buisiness to that -Person!",
 			"Who owns that -Noun? Did the -Person make it?",
 			"That -Noun is so -BadAdjective! Why would I, the -Person or the -2Person pay -Money for it?",
-			"This here is a -BadAdjective, -2BadAdjective, -Noun."
+			"This here is a -BadAdjective, -2BadAdjective -Noun."
 		],
 	"Parts" :
 		{
