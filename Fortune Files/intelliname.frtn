@@ -58,7 +58,10 @@
                     "Sky",
                     "Deer",
                     "Frog",
-                    "Mushroom"
+                    "Mushroom",
+                    "Snow",
+                    "Cedar",
+                    "Pine"
                 ],
                 "-part2":
                 [
@@ -88,7 +91,9 @@
                     "Mountain",
                     "Bridge",
                     "Creek",
-                    "Beach"
+                    "Beach",
+                    "Field",
+                    "Dale"
                 ]
         },
     "Macro":
