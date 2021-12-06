@@ -1,9 +1,14 @@
 # GenFortune
 
 Like the standard linux fortune program, except it uses a Mad Libs style algorithm to generate the fortunes instead of just
-choosing from a list.
+choosing from a list.  
 
-The C version is officially just archived here. Use  the python version.
+The C version is officially just archived here. Use  the python version.  The python version also supports Non-Kitten-Item formatted files.
+
+
+Please note that nethack and robotfindskitten files are under their own license
+
+
 
 
 ## Usage:
