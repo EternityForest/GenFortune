@@ -6,7 +6,7 @@
 	[""],
 	"Patterns" :
 		[
-			"The king has decreed that there shall be no more \"-Verbing of the -Noun\" -FullPlace.",
+			"The King has decreed that there shall be no more \"-Verbing of the -Noun\" -FullPlace.",
 			"Let it be known that on this day, this -Person has -Verbed the -Noun.",
 			"I declare a grand tournament do determine who is worthy of this -Noun.",
 			"Would you please kindly tell that -Person to stop -Verbing the -Noun?",
@@ -41,7 +41,7 @@
 				],
 			"-Noun":
 				[
-					"king's Palace","bucket","catapault","fire pole","piss pot","faire grounds","ampoule of wig powder","spitoon","pair of spitoonworker's gloves","tobacco pipe","suit of armor","fine sword","imported spices","pint of ale","pint of mead","bottle of snake oil","wig","shrubbery","periwig","useless blundarrbus","poster informing of a wig powder tax","wig powder stamp","bourdaloo","chamber pot","old violin","new violin","pair of elizibethan trousers","weird old statue"
+					"King's palace","bucket","catapault","fire pole","piss pot","faire grounds","ampoule of wig powder","spitoon","pair of spitoonworker's gloves","tobacco pipe","suit of armor","fine sword","imported spices","pint of ale","pint of mead","bottle of snake oil","wig","shrubbery","periwig","useless blundarrbus","poster informing of a wig powder tax","wig powder stamp","bourdaloo","chamber pot","old violin","new violin","pair of elizibethan trousers","weird old statue"
 				],
 			"-Verbed":
 				[
@@ -49,7 +49,7 @@
 				],
 			"-FullPlace":
 				[
-					"in the Barrel","under my bed","on top of me","where the king can see it","where the Queen can see it","near me","around me","in my mind","In the King's court","On any ship of the Royal Navy","where the dogs can hear it","anywhere near any man of property","around the tannery","on the other side of the Thames","anywhere remotely near anyone who owns anything like that -Noun"
+					"on this side of the Thames", "in all of France", "in the Barrel","under my bed","on top of me","where the King can see it","where the Queen can see it","near me","around me","in my mind","In the King's court","On any ship of the Royal Navy","where the dogs can hear it","anywhere near any man of property","around the tannery","on the other side of the Thames","anywhere remotely near anyone who owns anything like that -Noun"
 				]
 		},
 	"Macro":
