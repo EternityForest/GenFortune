@@ -12,13 +12,13 @@
 			"Would you please kindly tell that -Person to stop -Verbing the -Noun?",
 			"I am in dire need of a good -Noun presently, kind sire.",
 			"I would pay -Money for that -Noun.",
-			"Might i suggest -Verbing the -Noun?",
-			"Might i suggest -Verbing the -Person?",
-			"Where would i have to go to see a -Person -Verbing a -Noun? In private of course.",
+			"Might I suggest -Verbing the -Noun?",
+			"Might I suggest -Verbing the -Person?",
+			"Where would I have to go to see a -Person -Verbing a -Noun? In private of course.",
 			"Must we continually hide the -Noun -FullPlace?",
 			"You mean to charge -Money for that -Noun? I should rather take my buisiness to that -Person!",
 			"Who owns that -Noun? Did the -Person make it?",
-			"That -Noun is so -BadAdjective! Why would I, the -Person or the -2Person pay -Money for it?",
+			"That -Noun is so -BadAdjective! Why would I, the -Person, or the -2Person pay -Money for it?",
 			"This here is a -BadAdjective, -2BadAdjective -Noun."
 		],
 	"Parts" :
@@ -33,15 +33,15 @@
 				],
 			"-Person":
 				[
-					"knight","swordsman","blacksmith","farrier","messenger","slave","nightsoilman","outlaw","barmaid","wench","ninja","pirate","nobleman","sailor","general","merchant","confidence artist","spitoon emptier","lunatic","maker of periwigs","madman","stable boy","bo'sun","baron","queen","leper","drunk","plucky jade","crackpot"
+					"Groom of the Stool","Constable","Knight","swordsman","blacksmith","farrier","messenger","nightsoilman","outlaw","barmaid","wench","ninja","pirate","nobleman","sailor","general","merchant","confidence artist","spitoon emptier","lunatic","maker of periwigs","madman","stable boy","bo'sun","Baron","Queen","leper","drunk","plucky jade","crackpot"
 				],
 			"-Verbing":
 				[
-					"throwing","kicking","fouling","defiling","usurping","licking","tickling","staring at","obsessing over"
+					"throwing","kicking","fouling","defiling","usurping","licking","tickling","staring at","obsessing over","watering"
 				],
 			"-Noun":
 				[
-					"King's palace","bucket","catapault","fire pole","piss pot","faire grounds","ampoule of wig powder","spitoon","pair of spitoonworker's gloves","tobacco pipe","suit of armor","fine sword","imported spices","pint of ale","pint of mead","bottle of snake oil","wig","shrubbery","periwig","useless blundarrbus","poster informing of a wig powder tax","wig powder stamp","bourdaloo","chamber pot","old violin","new violin","pair of elizibethan trousers","weird old statue"
+					"King's palace","bucket","catapault","trebuchet","siege-engine", "fire pole","piss pot","close stool", "faire grounds","ampoule of wig powder","spitoon","pair of spitoonworker's gloves","tobacco pipe","suit of armor","fine sword","imported spices","pint of ale","pint of mead","bottle of snake oil","wig","shrubbery","periwig","useless blundarrbus","poster informing of a wig powder tax","wig powder stamp","bourdaloo","chamber pot","old violin","new violin","pair of elizibethan trousers","wierd old statue"
 				],
 			"-Verbed":
 				[

@@ -6,7 +6,7 @@
         "Wise pirate says: ",
         "A parrot says: ",
         "You look at your treasure map. On the back, someone has written: ",
-        "That old man told me "
+        "That old man told me: "
     ],
     "Endings": [
         ""
@@ -32,7 +32,7 @@
         "the -Object you found in -CreepyPlace looks very -BadAdjective!",
         "-CreepyPlace is full of -Demons.",
         "the -Demon will try to give you its -Object. Do not let it!",
-        "No -Demons Allowed on this ship. i will personally -Punish Any -SeaMan caught harboring one.",
+        "No -Demons allowed on this ship. i will personally -Punish any -SeaMan caught harboring one.",
         "the body of the -SeaMan has gone -Place. He was killed in -CreepyPlace by the -Entityduplicate's -Object.",
         "that -Object is not as it looks. it came from -CreepyPlace.",
         "the -SeaMan danced the hempen jig long ago!",
@@ -79,8 +79,8 @@
             "death wizard",
             "ghoul",
             "wraith",
-            "the living dead",
-            "the walking dead"
+            "living dead",
+            "walking dead"
         ],
         "-CreepyPlace": [
             "the cursed lagoon",
@@ -120,7 +120,11 @@
             "scabbard",
             "axe",
             "grog barrel",
-            "hogshead"
+            "hogshead",
+            "sail",
+            "binnacle",
+            "belaying pin",
+            "scuttlebutt"
         ],
         "-PartOfSelf": [
             "arm",
@@ -148,7 +152,8 @@
             "cabin boy",
             "powder boy",
             "captain",
-            "lookout"
+            "lookout",
+            "adventurer"
         ],
         "-Verbing": [
             "stealing",
@@ -213,7 +218,7 @@
             "coward",
             "traitor",
             "backstabber",
-            "common theif"
+            "common thief"
         ],
         "-Punish": [
             "keelhaul",

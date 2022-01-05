@@ -6,11 +6,14 @@ from random import choice, random
 from random import seed
 import os
 
+
+
 availiblefortunefiles = []
 availiblefortunefileslistforprinting = []
 d = os.path.abspath(__file__)
 
 d= os.path.dirname(d)
+
 
 
 def load(d):
@@ -68,30 +71,30 @@ if len(sys.argv) > 1:
         if os.path.isfile(os.path.join(FortunesDir,sys.argv[2]+".frtn")):
             f = open(os.path.join(FortunesDir,sys.argv[2]+".frtn"))
             filetype="gen"
-        if os.path.isfile(os.path.join(FortunesDir,sys.argv[2]+".nki")):
+        elif os.path.isfile(os.path.join(FortunesDir,sys.argv[2]+".nki")):
             f = open(os.path.join(FortunesDir,sys.argv[2]+".nki"))
             filetype='nki' 
         else:
-            print("No fortune file at " +os.path.join("/usr/share/openfortune",sys.argv[2]+".frtn"))
+            print("No fortune file at " +os.path.join("/usr/share/genfortune",sys.argv[2]+".frtn"))
             quit()
     elif sys.argv[1] in ['help','-h']:
         print (
 """Usage:
->>>openfortune
-    Print a fortune using a randomly chosen .frtn file from /usr/share/openfortune
+>>>genfortune
+    Print a fortune using a randomly chosen .frtn file from /usr/share/genfortune
 
->>>openfortune -v
-    Print a fortune using a randomly chosen .frtn file from /usr/share/openfortune
+>>>genfortune -v
+    Print a fortune using a randomly chosen .frtn file from /usr/share/genfortune
     And also display what file it came from.
 
->>>openfortune -f <file>
+>>>genfortune -f <file>
     Print a fortune using the fortune file specified
 
->>>openfortune from <name>
-    Print a fortune from a speciic file in /usr/share/openfortune. You do not need to add the .frtn at the end.
+>>>genfortune from <name>
+    Print a fortune from a speciic file in /usr/share/genfortune. You do not need to add the .frtn at the end.
 
 >>>openfortue list 
-    List availible fortune files in /usr/share/openfortune (With file extensions removed)
+    List availible fortune files in /usr/share/genfortune (With file extensions removed)
     
     A
 """)
